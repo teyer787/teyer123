@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>一键拨号联系客服</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #1a6dff 0%, #004aad 100%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 16px;
+            backdrop-filter: blur(10px);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        /* 拨号按钮样式 */
+        .call-btn {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            background-color: #fff;
+            color: #1a6dff;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .call-btn:hover {
+            background-color: #f0f0f0;
+            transform: translateY(-2px);
+        }
+
+        .call-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .phone-number {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>📞 联系我们</h1>
+        <p>如果您有任何疑问，请直接点击下方按钮，我们将尽快为您服务。</p>
+
+        <!-- 这里是核心代码：tel协议链接 -->
+        <!-- 请将下方的 "13800000000" 替换成你的真实电话号码 -->
+        <a href="tel:13800000000" class="call-btn">
+            点击拨打客服电话
+        </a>
+        
+        <!-- 号码展示（方便用户复制或确认） -->
+        <div class="phone-number">138 0000 0000</div>
+    </div>
+
+</body>
+</html>
